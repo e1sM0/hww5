@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Моя візитка</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body { 
+      text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+      animation: slideIn 0.6s ease-out;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    p, li, a {
+      color: #ffffff;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #87ceeb;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid #87ceeb;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+      text-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
+      animation: slideIn 0.7s ease-out;
+    }
+
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      display: inline-block;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      animation: slideIn 0.8s ease-out;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      margin-top: 30px;
+      animation: slideIn 0.9s ease-out;
+    }
+
+    footer p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border-bottom: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    footer a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+      text-shadow: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Моє ім'я</h1>
+  <nav>
+    <a href="#about">Про мене</a> |
+    <a href="#contacts">Контакти</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>Про мене</h2>
+    <p>Я починаю вивчати веб-програмування. Цей сайт — моя візитка.</p>
+  </section>
+
+  <section id="hobbies">
+    <h2>Мої хобі</h2>
+    <ul>
+      <li>Подорожі</li>
+      <li>Фотографія</li>
+      <li>Читання</li>
+    </ul>
+  </section>
+</main>
+
+<footer id="contacts">
+  <p>Контакти: example@gmail.com</p>
+  <p>© 2025 Усі права захищено</p>
+  <p><a href="homework%201/1slaid.html">← На перший слайд</a></p>
+</footer>
+
+</body>
+</html>
